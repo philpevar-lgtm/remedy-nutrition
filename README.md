@@ -25,11 +25,9 @@ Search `index.html` for `EDIT:` to find each placeholder.
 - [ ] **Bio** — education, credentials, certifications, years in practice, a personal note.
 - [ ] **Services** — session lengths, package details, and pricing if desired.
 - [ ] **Specialties** — match to Elena's actual focus areas.
-- [ ] **Contact details** — email, phone, address, telehealth coverage, and hours (contact section and footer).
+- [ ] **Hours** — confirm or remove the hours in the contact section.
 - [ ] **Booking link** — if using a scheduler (Healthie, Practice Better, SimplePractice, Calendly, etc.), replace `href="#contact"` on the "Book" buttons with the booking URL.
 - [ ] **Contact form** — create a free form at [formspree.io](https://formspree.io) and replace `YOUR_FORM_ID` in the form's `action`. Until then, submitting shows a "not connected" message.
-- [ ] **Title and description** — add the city to the `<title>` and meta description for local search.
-
 ## Hosting
 
 **Static host (easiest, free):** drag the project folder onto [Netlify Drop](https://app.netlify.com/drop), or use Cloudflare Pages or GitHub Pages, then connect a custom domain.
