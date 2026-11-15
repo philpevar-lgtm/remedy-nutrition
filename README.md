@@ -5,7 +5,7 @@ Website for Remedy Nutrition, the private practice of Elena Pevar, RD. Plain HTM
 ```
 index.html            All page content (single page with section anchors)
 css/styles.css        Styles, palette, and responsive layout
-js/main.js            Mobile menu, scroll animations, contact form submission
+js/main.js            Mobile menu, scroll animations, booking embed resizing, contact form submission
 images/               Favicon and portrait placeholder
 ```
 
@@ -26,7 +26,6 @@ Search `index.html` for `EDIT:` to find each placeholder.
 - [ ] **Services** — session lengths, package details, and pricing if desired.
 - [ ] **Specialties** — match to Elena's actual focus areas.
 - [ ] **Hours** — confirm or remove the hours in the contact section.
-- [ ] **Booking link** — if using a scheduler (Healthie, Practice Better, SimplePractice, Calendly, etc.), replace `href="#contact"` on the "Book" buttons with the booking URL.
 - [ ] **Contact form** — create a free form at [formspree.io](https://formspree.io) and replace `YOUR_FORM_ID` in the form's `action`. Until then, submitting shows a "not connected" message.
 ## Hosting
 

@@ -50,6 +50,24 @@ if ('IntersectionObserver' in window && !prefersReducedMotion) {
   revealEls.forEach((el) => el.classList.add('is-visible'));
 }
 
+const bookingFrame = document.querySelector('[data-booking-frame]');
+
+if (bookingFrame) {
+  window.addEventListener('message', (event) => {
+    if (event.origin !== 'https://www.notrispace.com' || typeof event.data !== 'string') return;
+
+    if (event.data.includes('notri-bookings-resize')) {
+      const height = Number(event.data.split(':')[1]);
+      if (height > 0) bookingFrame.style.height = `${height}px`;
+    }
+
+    // Only scroll back to the calendar when its top is hidden, so loading it never pulls the page down.
+    if (event.data.includes('notri-bookings-page') && bookingFrame.getBoundingClientRect().top < header.offsetHeight) {
+      bookingFrame.scrollIntoView();
+    }
+  });
+}
+
 document.querySelectorAll('[data-year]').forEach((el) => {
   el.textContent = new Date().getFullYear();
 });
